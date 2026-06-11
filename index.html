@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITGYM — El gimnasio para ti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#inicio" class="logo">FIT<b>GYM</b></a>
+      <div class="nav-links">
+        <a href="#espacio">Tu Espacio</a>
+        <a href="#planes">Planes</a>
+        <a href="#app">App</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contacto" class="btn btn-primary btn-sm">¡Inscríbete ya!</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mm-overlay" id="mmOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu">
+    <div class="mm-top">
+      <span class="logo">FIT<b>GYM</b></span>
+      <button class="hamburger" id="mmClose" aria-label="Cerrar menú"><i data-lucide="x"></i></button>
+    </div>
+    <a href="#espacio"   class="mm-link">Tu Espacio</a>
+    <a href="#planes"    class="mm-link">Planes</a>
+    <a href="#app"       class="mm-link">App</a>
+    <a href="#servicios" class="mm-link">Servicios</a>
+    <a href="#contacto"  class="mm-link">Contacto</a>
+    <a href="#contacto" class="btn btn-primary btn-block" style="margin-top:20px">¡Inscríbete ya!</a>
+  </aside>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="inicio">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=85" alt="Interior del gimnasio FITGYM">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-glow"></div>
+    <div class="wrap">
+      <div class="hero-inner">
+        <h1 class="display reveal d1">El gimnasio<span class="l2">para ti</span></h1>
+        <p class="lede reveal d2">Equipos modernos, clases grupales exclusivas y entrenadores certificados. Sin permanencia, sin complicaciones.</p>
+        <div class="hero-actions reveal d3">
+          <a href="#planes"  class="btn btn-primary">Comienza ya <i data-lucide="arrow-right"></i></a>
+          <a href="#espacio" class="btn btn-outline">Conoce el gimnasio</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span class="bar"></span> Scroll</div>
+  </header>
+
+  <!-- ============ PLANES ============ -->
+  <section class="section" id="planes">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow reveal">Membresías</p>
+        <h2 class="display title reveal d1">Elige tu plan</h2>
+        <p class="lede reveal d2" style="text-align:center">Dos planes simples. Sin matrícula esta semana y cancela cuando quieras.</p>
+      </div>
+
+      <div class="plans-grid">
+
+        <!-- Interdiario -->
+        <article class="plan reveal d1">
+          <h3 class="plan-name">Interdiario</h3>
+          <p class="plan-desc">Entrena cada dos días</p>
+          <div class="plan-divider"></div>
+          <div class="plan-price">
+            <span class="cur">S/</span><span class="amt">100</span><span class="per">/mes</span>
+          </div>
+
+          <a href="#contacto" class="btn btn-outline btn-block">Inscríbete</a>
+          <ul class="plan-features">
+            <li><span class="ck"><i data-lucide="check"></i></span> Acceso 3 veces por semana</li>
+            <li><span class="ck"><i data-lucide="check"></i></span> Máquinas y pesas libres</li>
+            <li><span class="ck"><i data-lucide="check"></i></span> Zona cardio</li>
+            <li><span class="ck"><i data-lucide="check"></i></span> Casilleros</li>
+          </ul>
+          <div class="plan-extra">
+            <div>
+              <ul>
+                <li><span class="ck"><i data-lucide="check"></i></span> Clases grupales incluidas</li>
+                <li><span class="ck"><i data-lucide="check"></i></span> App FITGYM</li>
+                <li><span class="ck"><i data-lucide="check"></i></span> 1 evaluación física</li>
+              </ul>
+            </div>
+          </div>
+          <button class="plan-toggle" aria-expanded="false"><span>Ver todos los beneficios</span> <i data-lucide="chevron-down"></i></button>
+        </article>
+
+        <!-- Diario (popular) -->
+        <article class="plan popular reveal d2">
+          <span class="plan-badge">Más popular</span>
+          <h3 class="plan-name">Diario</h3>
+          <p class="plan-desc">Acceso todos los días</p>
+          <div class="plan-divider"></div>
+          <div class="plan-price">
+            <span class="cur">S/</span><span class="amt">120</span><span class="per">/mes</span>
+          </div>
+
+          <a href="#contacto" class="btn btn-primary btn-block">Inscríbete</a>
+          <ul class="plan-features">
+            <li><span class="ck"><i data-lucide="check"></i></span> Acceso todos los días</li>
+            <li><span class="ck"><i data-lucide="check"></i></span> Máquinas y pesas libres</li>
+            <li><span class="ck"><i data-lucide="check"></i></span> Zona cardio</li>
+            <li><span class="ck"><i data-lucide="check"></i></span> Casilleros</li>
+          </ul>
+          <div class="plan-extra">
+            <div>
+              <ul>
+                <li><span class="ck"><i data-lucide="check"></i></span> Clases grupales ilimitadas</li>
+                <li><span class="ck"><i data-lucide="check"></i></span> App FITGYM + rutinas</li>
+                <li><span class="ck"><i data-lucide="check"></i></span> Evaluación de bioimpedancia</li>
+                <li><span class="ck"><i data-lucide="check"></i></span> Invita a un amigo 1x/mes</li>
+              </ul>
+            </div>
+          </div>
+          <button class="plan-toggle" aria-expanded="false"><span>Ver todos los beneficios</span> <i data-lucide="chevron-down"></i></button>
+        </article>
+      </div>
+
+      <div class="plans-reassure reveal d3">
+        <span><i data-lucide="check-circle-2"></i> Sin matrícula esta semana</span>
+        <span><i data-lucide="check-circle-2"></i> Cancela cuando quieras</span>
+        <span><i data-lucide="check-circle-2"></i> Clases grupales incluidas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCIA ============ -->
+  <section class="section raised" id="espacio">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow reveal">La experiencia FITGYM</p>
+        <h2 class="display title reveal d1">Todo bajo un<br>mismo techo</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature reveal d1">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=700&q=80')"></div>
+          <div class="feature-body">
+            <h3>Equipos modernos</h3>
+            <p>Más de 200 equipos de marcas Life Fitness y Technogym, siempre disponibles y en perfecto estado.</p>
+            <span class="feature-link">Ver la sala <i data-lucide="arrow-right"></i></span>
+          </div>
+        </article>
+        <article class="feature reveal d2">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=700&q=80')"></div>
+          <div class="feature-body">
+            <h3>Clases grupales</h3>
+            <p>Clases incluidas en ambos planes, con instructores certificados internacionalmente.</p>
+            <span class="feature-link">Ver horarios <i data-lucide="arrow-right"></i></span>
+          </div>
+        </article>
+        <article class="feature reveal d3">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=700&q=80')"></div>
+          <div class="feature-body">
+            <h3>Zona de entrenamiento</h3>
+            <p>Área funcional, zona libre, cardio y stretching. Todo lo que necesitas para entrenar a tu ritmo.</p>
+            <span class="feature-link">Conócela <i data-lucide="arrow-right"></i></span>
+          </div>
+        </article>
+      </div>
+      <div class="benefits">
+        <div class="benefit reveal d1"><span class="ic"><i data-lucide="dumbbell"></i></span><span>Pesas libres premium</span></div>
+        <div class="benefit reveal d1"><span class="ic"><i data-lucide="heart-pulse"></i></span><span>Cardio de última generación</span></div>
+        <div class="benefit reveal d2"><span class="ic"><i data-lucide="badge-check"></i></span><span>Staff certificado</span></div>
+        <div class="benefit reveal d2"><span class="ic"><i data-lucide="shower-head"></i></span><span>Duchas y vestuarios</span></div>
+        <div class="benefit reveal d3"><span class="ic"><i data-lucide="calendar-x"></i></span><span>Sin permanencia</span></div>
+        <div class="benefit reveal d3"><span class="ic"><i data-lucide="clock"></i></span><span>Horarios flexibles</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APP ============ -->
+  <section class="section" id="app">
+    <div class="wrap app-section">
+      <div class="app-copy">
+        <p class="eyebrow reveal">Descárgala gratis</p>
+        <h2 class="display reveal d1">FITGYM App:<br><span class="accent">una experiencia completa</span></h2>
+        <p class="lede reveal d2">Reserva clases, accede al gimnasio con tu celular, monitorea tu progreso y descarga rutinas creadas por nuestros entrenadores.</p>
+        <ul class="app-check reveal d2">
+          <li><span class="ck"><i data-lucide="check"></i></span> Reserva de clases en tiempo real</li>
+          <li><span class="ck"><i data-lucide="check"></i></span> Acceso digital al gimnasio (sin tarjeta)</li>
+          <li><span class="ck"><i data-lucide="check"></i></span> Seguimiento de progreso semanal</li>
+          <li><span class="ck"><i data-lucide="check"></i></span> Rutinas personalizadas con IA</li>
+        </ul>
+        <div class="app-stores reveal d3">
+          <a href="#" class="store-btn">
+            <i data-lucide="apple"></i>
+            <span class="st-txt"><small>Disponible en</small><b>App Store</b></span>
+          </a>
+          <a href="#" class="store-btn">
+            <i data-lucide="play"></i>
+            <span class="st-txt"><small>Disponible en</small><b>Google Play</b></span>
+          </a>
+        </div>
+        <div class="app-qr reveal d3">
+          <div class="ph qr"><div class="ph-cap"><i data-lucide="qr-code"></i><span class="mono">QR</span></div></div>
+          <p>Escanea y descarga gratis<br>para iOS y Android.</p>
+        </div>
+      </div>
+      <div class="app-visual reveal d2">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ps-top">
+              <div class="ps-logo">FIT<b>GYM</b></div>
+              <div class="ps-hi">Hola, Carlos</div>
+            </div>
+            <div class="ps-class">
+              <div class="pc-ey">Próxima clase</div>
+              <h4>HIIT Extremo</h4>
+              <div class="pc-meta"><i data-lucide="clock"></i> Hoy 7:00 PM</div>
+              <div class="pc-link">Ver detalles <i data-lucide="arrow-right" style="width:13px;height:13px"></i></div>
+            </div>
+            <div class="ps-stats">
+              <div class="ps-stat"><b>14</b><span>Clases este mes</span></div>
+              <div class="ps-stat"><b>5.2k</b><span>kcal quemadas</span></div>
+            </div>
+            <div class="ps-nav">
+              <i data-lucide="home" class="on"></i>
+              <i data-lucide="calendar-days"></i>
+              <i data-lucide="dumbbell"></i>
+              <i data-lucide="user"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section raised" id="servicios">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow reveal">Servicios adicionales</p>
+        <h2 class="display title reveal d1">Lleva tu progreso<br>más lejos</h2>
+        <p class="lede reveal d2" style="text-align:center">Complementa tu membresía con nuestros servicios premium.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal d1">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700&q=80')"></div>
+          <div class="svc-body">
+            <span class="svc-tag">1 a 1</span>
+            <h3>FITGYM Coach</h3>
+            <p>Entrenamiento 100% personalizado con coaches certificados. Plan nutricional incluido.</p>
+            <a href="#contacto" class="btn btn-outline btn-sm" style="align-self:flex-start">Más información <i data-lucide="arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="svc reveal d2">
+          <div class="media" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700&q=80')"></div>
+          <div class="svc-body">
+            <span class="svc-tag">Diagnóstico</span>
+            <h3>Balance &amp; Bioimpedancia</h3>
+            <p>Análisis completo de composición corporal. Mide tu grasa, músculo y metabolismo en minutos.</p>
+            <a href="#contacto" class="btn btn-outline btn-sm" style="align-self:flex-start">Más información <i data-lucide="arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section class="section" id="testimonios">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow reveal">Comunidad</p>
+        <h2 class="display title reveal d1">Lo que dicen<br>nuestros miembros</h2>
+        <div class="tst-rating reveal d2"><i data-lucide="star"></i> <b>4.9</b> en Google · +1,200 reseñas</div>
+      </div>
+      <div class="tst-grid">
+        <article class="tst reveal d1">
+          <div class="tst-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="tst-quote">"Perdí 20 kg en 7 meses. Los entrenadores son increíbles y siempre hay un equipo disponible. FITGYM cambió mi vida."</p>
+          <div class="tst-who">
+            <div class="tst-av" style="background:#d11">MR</div>
+            <div><b>María Rodríguez</b><span>Plan Diario · 1 año</span></div>
+          </div>
+        </article>
+        <article class="tst feat reveal d2">
+          <div class="tst-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="tst-quote">"El plan Diario vale cada sol. Entreno a las 6am antes del trabajo y la sala nunca está saturada. Equipos impecables."</p>
+          <div class="tst-who">
+            <div class="tst-av" style="background:var(--orange)">JP</div>
+            <div><b>Javier Paredes</b><span>Plan Diario · 8 meses</span></div>
+          </div>
+        </article>
+        <article class="tst reveal d3">
+          <div class="tst-stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="tst-quote">"Las clases grupales son lo mejor. Llevo 2 años y no fallo ni un lunes. El ambiente realmente te engancha."</p>
+          <div class="tst-who">
+            <div class="tst-av" style="background:#1a6bd4">AS</div>
+            <div><b>Andrea Soto</b><span>Plan Interdiario · 2 años</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section class="cta-band">
+    <div class="cta-watermark" aria-hidden="true">FITGYM</div>
+    <div class="wrap">
+      <div class="reveal">
+        <h2 class="display">¿Listo para empezar?</h2>
+        <p>Primera semana gratis. Sin compromisos, sin tarjeta de crédito.</p>
+      </div>
+      <a href="#contacto" class="btn btn-dark reveal d1">Inscríbete ya <i data-lucide="arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section raised" id="contacto">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow reveal">Primera semana gratis</p>
+        <h2 class="display reveal d1">Regístrate<br><span class="accent">y empieza hoy</span></h2>
+        <p class="lede reveal d2">Déjanos tus datos y un asesor te contactará para ayudarte a elegir el plan perfecto para ti.</p>
+        <div class="contact-list reveal d2">
+          <div class="contact-item"><span class="ic"><i data-lucide="map-pin"></i></span><div><b>Nuestra sede</b><span>Av. Larco 1234, Lima</span></div></div>
+          <div class="contact-item"><span class="ic"><i data-lucide="phone"></i></span><div><b>Teléfono</b><span>960 930 024</span></div></div>
+          <div class="contact-item"><span class="ic"><i data-lucide="mail"></i></span><div><b>Email</b><span>info@fitgym.pe</span></div></div>
+          <div class="contact-item"><span class="ic"><i data-lucide="clock"></i></span><div><b>Atención</b><span>Lun–Vie 5am–11pm · Sáb–Dom 7am–9pm</span></div></div>
+        </div>
+      </div>
+      <div class="contact-card reveal d1">
+        <form id="regForm" novalidate>
+          <div class="form-fields">
+            <div class="form-row">
+              <div class="field">
+                <label for="f-nombre">Nombre</label>
+                <input id="f-nombre" name="nombre" type="text" placeholder="Juan" required>
+                <span class="err">Ingresa tu nombre.</span>
+              </div>
+              <div class="field">
+                <label for="f-apellido">Apellido</label>
+                <input id="f-apellido" name="apellido" type="text" placeholder="Pérez" required>
+                <span class="err">Ingresa tu apellido.</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-email">Correo electrónico</label>
+              <input id="f-email" name="email" type="email" placeholder="juan@email.com" required>
+              <span class="err">Ingresa un correo válido.</span>
+            </div>
+            <div class="field">
+              <label for="f-tel">Celular</label>
+              <input id="f-tel" name="tel" type="tel" inputmode="numeric" placeholder="999 123 456" required>
+              <span class="err">Ingresa un número de 9 dígitos.</span>
+            </div>
+            <div class="field">
+              <label for="f-plan">Plan de interés</label>
+              <select id="f-plan" name="plan" required>
+                <option value="" disabled selected>Selecciona un plan</option>
+                <option value="interdiario">Interdiario — S/ 100/mes</option>
+                <option value="diario">Diario — S/ 120/mes</option>
+                <option value="coach">FITGYM Coach</option>
+              </select>
+              <span class="err">Elige un plan.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">¡Quiero mi semana gratis!</button>
+            <p class="form-note">Al registrarte aceptas nuestra <a href="#">Política de Privacidad</a>. Consulta nuestro <a href="#">Libro de Reclamaciones</a>.</p>
+          </div>
+          <div class="form-success" id="formSuccess">
+            <span class="ic"><i data-lucide="check"></i></span>
+            <h3>¡Listo, te contactaremos pronto!</h3>
+            <p>Un asesor de FITGYM te escribirá en menos de 24 horas para activar tu semana gratis.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo">FIT<b>GYM</b></span>
+          <p>El gimnasio para ti. Equipos modernos, precios accesibles y clases exclusivas para todos los niveles.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i data-lucide="music-2"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Tu espacio</h4>
+          <ul>
+            <li><a href="#espacio">Sala de pesas</a></li>
+            <li><a href="#espacio">Zona cardio</a></li>
+            <li><a href="#espacio">Clases grupales</a></li>
+            <li><a href="#servicios">FITGYM Coach</a></li>
+            <li><a href="#espacio">Vestuarios y duchas</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Planes</h4>
+          <ul>
+            <li><a href="#planes">Interdiario</a></li>
+            <li><a href="#planes">Diario</a></li>
+            <li><a href="#servicios">FITGYM Coach</a></li>
+            <li><a href="#servicios">Bioimpedancia</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="#">Sobre FITGYM</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Tratamiento de datos (ARCO)</a></li>
+            <li><a href="#">Libro de reclamaciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 FITGYM S.A.C. · RUC 20123456789 · Todos los derechos reservados.</p>
+        <div class="fb-links">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+          <a href="#">Libro de reclamaciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
