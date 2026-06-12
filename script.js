@@ -128,11 +128,9 @@
         }
         var nombre   = (form.querySelector("[name=nombre]").value || "").trim();
         var apellido = (form.querySelector("[name=apellido]").value || "").trim();
-        var email    = (form.querySelector("[name=email]").value || "").trim();
         var plan     = (form.querySelector("[name=plan]").value || "").trim();
         var msg = "Hola FITGYM! Me interesa inscribirme 💪\n\n"
           + "👤 Nombre: " + nombre + " " + apellido + "\n"
-          + "📧 Email: " + email + "\n"
           + "🏋️ Plan: " + plan;
         window.open("https://wa.me/51960930024?text=" + encodeURIComponent(msg), "_blank");
       });
